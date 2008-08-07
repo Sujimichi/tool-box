@@ -1,0 +1,30 @@
+source $VIMRUNTIME/mswin.vim
+
+if has("autocmd")
+	filetype plugin indent on
+	au FileType text setlocal tw=78
+endif
+
+syntax on
+set autoindent
+set showcmd
+set showmatch
+set showmode
+set formatoptions=croq
+set smartindent
+set tabstop=2
+set ls=2
+set history=0
+set backspace=2
+set shiftwidth=2
+set nobackup
+set writebackup
+
+if has("gui")
+	set number
+	set ruler
+	set mouse=a
+	colorscheme torte
+	set anti
+	set gfn=DejaVu\ Sans\ Mono\ Bold\ 14
+end
